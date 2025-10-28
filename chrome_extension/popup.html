@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YouTube Transcript Q&A</title>
+    <style>
+      body { font-family: Arial, sans-serif; width: 320px; padding: 12px; }
+      label { font-size: 12px; color: #333; }
+      input[type=text] { width: 100%; padding: 8px; margin: 6px 0 12px; }
+      button { padding: 8px 12px; }
+      .muted { font-size: 12px; color: #666; }
+    </style>
+  </head>
+  <body>
+    <h3>YouTube Transcript Q&A</h3>
+    <div>
+      <label>Detected Video ID</label>
+      <input id="videoId" type="text" placeholder="No video detected" />
+    </div>
+    <div>
+      <label>Streamlit app URL (default localhost)</label>
+      <input id="appUrl" type="text" value="http://localhost:8501" />
+      <div class="muted">The extension will open the app in a new tab with ?video_id=VIDEOID</div>
+    </div>
+    <div style="margin-top:10px;">
+      <button id="openBtn">Open Q&amp;A</button>
+      <button id="copyBtn">Copy URL</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

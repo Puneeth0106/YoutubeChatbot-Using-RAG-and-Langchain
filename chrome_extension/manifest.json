@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcript Q&A Launcher",
+  "version": "0.1",
+  "description": "Open the Streamlit YouTube Transcript Q&A app for the current YouTube video.",
+  "permissions": ["tabs", "activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
