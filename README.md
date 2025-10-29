@@ -1,6 +1,6 @@
 # Youtube Chatbot — RAG Q&A over YouTube transcripts
 
-A small Streamlit-based Retrieval-Augmented Generation (RAG) app that indexes YouTube transcripts and answers natural-language questions using LangChain and an LLM (OpenAI by default). The project also includes a Chrome extension to prefill videos and a small FastAPI backend to enable in-extension chat for local setups.
+A Streamlit-based Retrieval-Augmented Generation (RAG) app that indexes YouTube transcripts and answers natural-language questions using LangChain and an LLM (OpenAI by default). The project also includes a Chrome extension to prefill videos and a small FastAPI backend to enable in-extension chat for local setups.
 
 ## Highlights
 - Index YouTube transcripts (with fallback for non-English transcripts)
